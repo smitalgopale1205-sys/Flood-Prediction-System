@@ -1,0 +1,64 @@
+{
+  "features": [
+    "Rainfall",
+    "Humidity",
+    "Water_Level",
+    "River_Discharge",
+    "Elevation",
+    "Population_Density",
+    "Historical_Floods",
+    "Land_Cover_enc",
+    "Soil_Type_enc"
+  ],
+  "feature_labels": {
+    "Rainfall": "Rainfall (mm)",
+    "Humidity": "Humidity (%)",
+    "Water_Level": "Water Level (m)",
+    "River_Discharge": "River Discharge (m\u00b3/s)",
+    "Elevation": "Elevation (m)",
+    "Population_Density": "Population Density (p/km\u00b2)",
+    "Historical_Floods": "Historical Floods",
+    "Land_Cover_enc": "Land Cover",
+    "Soil_Type_enc": "Soil Type"
+  },
+  "land_covers": [
+    "Agricultural",
+    "Desert",
+    "Forest",
+    "Urban",
+    "Water Body"
+  ],
+  "soil_types": [
+    "Clay",
+    "Loam",
+    "Peat",
+    "Sandy",
+    "Silt"
+  ],
+  "lc_risk": {
+    "Water Body": 1.1,
+    "Urban": 1.05,
+    "Agricultural": 1.02,
+    "Forest": 0.95,
+    "Desert": 0.9
+  },
+  "st_risk": {
+    "Clay": 1.08,
+    "Peat": 1.05,
+    "Silt": 1.02,
+    "Loam": 0.98,
+    "Sandy": 0.9
+  },
+  "best_params": {
+    "n_estimators": 300,
+    "learning_rate": 0.15,
+    "max_depth": 7,
+    "subsample": 0.8,
+    "random_state": 42
+  },
+  "final_accuracy": 0.9483,
+  "final_precision": 0.95,
+  "final_recall": 0.9574,
+  "final_f1": 0.9537,
+  "risk_threshold": 50
+}
